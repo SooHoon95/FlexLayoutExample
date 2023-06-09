@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1B87D89C6AA2D82CA3F79DF2 /* Pods_Flex_PinLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375A812DC6730B431C00E341 /* Pods_Flex_PinLayout.framework */; };
+		BD2D016A2A33352A003A25D5 /* CSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2D01692A33352A003A25D5 /* CSButton.swift */; };
 		BD893E8D2A31C80D00753FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD893E8C2A31C80D00753FA9 /* AppDelegate.swift */; };
 		BD893E8F2A31C80D00753FA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD893E8E2A31C80D00753FA9 /* SceneDelegate.swift */; };
 		BD893E912A31C80D00753FA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD893E902A31C80D00753FA9 /* ViewController.swift */; };
 		BD893E942A31C80D00753FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD893E922A31C80D00753FA9 /* Main.storyboard */; };
 		BD893E962A31C80F00753FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD893E952A31C80F00753FA9 /* Assets.xcassets */; };
 		BD893E992A31C80F00753FA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD893E972A31C80F00753FA9 /* LaunchScreen.storyboard */; };
+		BD893EA22A31CEE500753FA9 /* FlexLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD893EA12A31CEE500753FA9 /* FlexLayoutViewController.swift */; };
+		BD893EA42A31CEF700753FA9 /* PinLayoutTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD893EA32A31CEF700753FA9 /* PinLayoutTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		375A812DC6730B431C00E341 /* Pods_Flex_PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flex_PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6B96A88F2BFE0D7B145001 /* Pods-Flex+PinLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex+PinLayout.release.xcconfig"; path = "Target Support Files/Pods-Flex+PinLayout/Pods-Flex+PinLayout.release.xcconfig"; sourceTree = "<group>"; };
+		BD2D01692A33352A003A25D5 /* CSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSButton.swift; sourceTree = "<group>"; };
 		BD893E892A31C80D00753FA9 /* Flex+PinLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flex+PinLayout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD893E8C2A31C80D00753FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD893E8E2A31C80D00753FA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +31,8 @@
 		BD893E952A31C80F00753FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD893E982A31C80F00753FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD893E9A2A31C80F00753FA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD893EA12A31CEE500753FA9 /* FlexLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutViewController.swift; sourceTree = "<group>"; };
+		BD893EA32A31CEF700753FA9 /* PinLayoutTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLayoutTestViewController.swift; sourceTree = "<group>"; };
 		F4252A18FD2A82E5092B2534 /* Pods-Flex+PinLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex+PinLayout.debug.xcconfig"; path = "Target Support Files/Pods-Flex+PinLayout/Pods-Flex+PinLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +54,6 @@
 				F4252A18FD2A82E5092B2534 /* Pods-Flex+PinLayout.debug.xcconfig */,
 				7C6B96A88F2BFE0D7B145001 /* Pods-Flex+PinLayout.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +63,14 @@
 				375A812DC6730B431C00E341 /* Pods_Flex_PinLayout.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2D01662A3334F6003A25D5 /* CSComponent */ = {
+			isa = PBXGroup;
+			children = (
+				BD2D01692A33352A003A25D5 /* CSButton.swift */,
+			);
+			path = CSComponent;
 			sourceTree = "<group>";
 		};
 		BD893E802A31C80D00753FA9 = {
@@ -81,6 +94,8 @@
 		BD893E8B2A31C80D00753FA9 /* Flex+PinLayout */ = {
 			isa = PBXGroup;
 			children = (
+				BD2D01662A3334F6003A25D5 /* CSComponent */,
+				BD893EA02A31CECD00753FA9 /* View */,
 				BD893E8C2A31C80D00753FA9 /* AppDelegate.swift */,
 				BD893E8E2A31C80D00753FA9 /* SceneDelegate.swift */,
 				BD893E902A31C80D00753FA9 /* ViewController.swift */,
@@ -90,6 +105,15 @@
 				BD893E9A2A31C80F00753FA9 /* Info.plist */,
 			);
 			path = "Flex+PinLayout";
+			sourceTree = "<group>";
+		};
+		BD893EA02A31CECD00753FA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD893EA12A31CEE500753FA9 /* FlexLayoutViewController.swift */,
+				BD893EA32A31CEF700753FA9 /* PinLayoutTestViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD893E912A31C80D00753FA9 /* ViewController.swift in Sources */,
+				BD2D016A2A33352A003A25D5 /* CSButton.swift in Sources */,
+				BD893EA42A31CEF700753FA9 /* PinLayoutTestViewController.swift in Sources */,
+				BD893EA22A31CEE500753FA9 /* FlexLayoutViewController.swift in Sources */,
 				BD893E8D2A31C80D00753FA9 /* AppDelegate.swift in Sources */,
 				BD893E8F2A31C80D00753FA9 /* SceneDelegate.swift in Sources */,
 			);
